@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1138.51">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier; color: #0000ee}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Courier; color: #0000ee}
+    span.s1 {text-decoration: underline ; color: #0000ee}
+    span.s2 {color: #000000}
+    span.s3 {text-decoration: underline}
+    span.s4 {text-decoration: underline ; color: #063eef}
+    span.s5 {font: 12.0px Courier; color: #000000}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="utf-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Carousel Template &amp;middot; Bootstrap&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="description" content=""&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="author" content=""&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Le styles --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="<a href="view-source:http://twitter.github.io/bootstrap/assets/css/bootstrap.css"><span class="s1">../assets/css/bootstrap.css</span></a>" rel="stylesheet"&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;link href="<a href="view-source:http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css"><span class="s3">../assets/css/bootstrap-responsive.css</span></a>" rel="stylesheet"&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* GLOBAL STYLES</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-------------------------------------------------- */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Padding below the footer and lighter body text */</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-bottom: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #5a5a5a;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* CUSTOMIZE THE NAVBAR</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-------------------------------------------------- */</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Special class on .container surrounding .navbar, used for positioning it into place. */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar-wrapper {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>right: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 10;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar-wrapper .navbar {</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Remove border and change up box shadow for more contrast */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar .navbar-inner {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);</p>
+<p class="p1"><span class="Apple-converted-space">         </span>-moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);</p>
+<p class="p1"><span class="Apple-converted-space">              </span>box-shadow: 0 2px 10px rgba(0,0,0,.25);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Downsize the brand/project name a bit */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar .brand {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-shadow: 0 -1px 0 rgba(0,0,0,.5);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Navbar links: increase padding for taller navbar */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar .nav &gt; li &gt; a {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Offset the responsive button for proper vertical alignment */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.navbar .btn-navbar {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* CUSTOMIZE THE CAROUSEL</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-------------------------------------------------- */</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Carousel base class */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 60px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel .container {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 9;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel-control {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 80px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 120px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-shadow: 0 1px 1px rgba(0,0,0,.4);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>z-index: 10;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel .item {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel img {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel-caption {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: static;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 550px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 200px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel-caption h1,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel-caption .lead {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.25;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-shadow: 0 1px 1px rgba(0,0,0,.4);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel-caption .btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* MARKETING CONTENT</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-------------------------------------------------- */</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Center align the text within the three columns below the carousel */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.marketing .span4 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.marketing h2 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: normal;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.marketing .span4 p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-left: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-right: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Featurettes</p>
+<p class="p1"><span class="Apple-converted-space">    </span>------------------------- */</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.featurette-divider {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 80px 0; /* Space out the Bootstrap &lt;hr&gt; more */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.featurette {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden; /* Vertically center images part 2: clear their floats. */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.featurette-image {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Give some space on the sides of the floated elements so text doesn't run right into it. */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.featurette-image.pull-left {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-right: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.featurette-image.pull-right {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-left: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Thin out the marketing headings */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.featurette-heading {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 300;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: -1px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* RESPONSIVE CSS</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-------------------------------------------------- */</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 979px) {</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>.container.navbar-wrapper {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin-bottom: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.navbar-inner {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border-radius: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: -20px 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>.carousel .item {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.carousel img {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: auto;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>.featurette {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: auto;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.featurette-image.pull-left,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.featurette-image.pull-right {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>float: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>max-width: 40%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 0 auto 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 767px) {</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>.navbar-inner {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: -20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>.carousel {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin-left: -20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin-right: -20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.carousel .container {</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.carousel .item {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: 300px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.carousel img {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: 300px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.carousel-caption {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 65%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 0 70px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin-top: 100px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.carousel-caption h1 {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.carousel-caption .lead,</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.carousel-caption .btn {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>.marketing .span4 + .span4 {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin-top: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>.featurette-heading {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.featurette .lead {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>line-height: 1.5;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- HTML5 shim, for IE6-8 support of HTML5 elements --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!--[if lt IE 9]&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;script src="../assets/js/html5shiv.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;![endif]--&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Fav and touch icons --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="apple-touch-icon-precomposed" sizes="144x144" href="<a href="view-source:http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png"><span class="s1">../assets/ico/apple-touch-icon-144-precomposed.png</span></a>"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="apple-touch-icon-precomposed" sizes="114x114" href="<a href="view-source:http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png"><span class="s1">../assets/ico/apple-touch-icon-114-precomposed.png</span></a>"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;link rel="apple-touch-icon-precomposed" sizes="72x72" href="<a href="view-source:http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png"><span class="s1">../assets/ico/apple-touch-icon-72-precomposed.png</span></a>"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;link rel="apple-touch-icon-precomposed" href="<a href="view-source:http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png"><span class="s1">../assets/ico/apple-touch-icon-57-precomposed.png</span></a>"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                   </span>&lt;link rel="shortcut icon" href="<a href="view-source:http://twitter.github.io/bootstrap/assets/ico/favicon.png"><span class="s1">../assets/ico/favicon.png</span></a>"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- NAVBAR</p>
+<p class="p1"><span class="Apple-converted-space">    </span>================================================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="navbar-wrapper"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="container"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="navbar navbar-inverse"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="navbar-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="icon-bar"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="icon-bar"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="icon-bar"&gt;&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a class="brand" href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23"><span class="s1">#</span></a>"&gt;Project name&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="nav-collapse collapse"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;ul class="nav"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li class="active"&gt;&lt;a href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23"><span class="s1">#</span></a>"&gt;Home&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23about"><span class="s1">#about</span></a>"&gt;About&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;&lt;a href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23contact"><span class="s1">#contact</span></a>"&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li class="Categories"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;a href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23"><span class="s1">#</span></a>" class="dropdown-toggle" data-toggle="dropdown"&gt;Dropdown &lt;b class="caret"&gt;&lt;/b&gt;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;ul class="dropdown-menu"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;a href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23"><span class="s1">#</span></a>"&gt;Attractions&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;a href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23"><span class="s1">#</span></a>"&gt;Restaurants&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;a href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23"><span class="s1">#</span></a>"&gt;Lodging&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;li&gt;&lt;a href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23"><span class="s4">#</span></a>"&gt;Tech Companies&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li class="divider"&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li class="nav-header"&gt;Nav header&lt;/li&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                  </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;&lt;!--/.nav-collapse --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;&lt;!-- /.navbar-inner --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;&lt;!-- /.navbar --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt; &lt;!-- /.container --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;&lt;!-- /.navbar-wrapper --&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Carousel</p>
+<p class="p1"><span class="Apple-converted-space">    </span>================================================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="myCarousel" class="carousel slide"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="carousel-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="item active"&gt;</p>
+<p class="p4"><span class="s5"><span class="Apple-converted-space">          </span>&lt;img src="</span><span class="s3">baltimore</span><span class="s5">" alt=""&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="carousel-caption"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;h1&gt;Go 2 Baltimore&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;pBaltimore is full of places to go. COME EXPERIENCE THE FUN!&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">          </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="item"&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">          </span>&lt;img src="<a href="view-source:http://twitter.github.io/bootstrap/assets/img/examples/slide-02.jpg"><span class="s3">../assets/img/examples/slide-02.jpg</span></a>" alt=""&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="carousel-caption"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;h1&gt;Another example headline.&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;p class="lead"&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;a class="btn btn-large btn-primary" href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23"><span class="s1">#</span></a>"&gt;Learn more&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="item"&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">          </span>&lt;img src="<a href="view-source:http://twitter.github.io/bootstrap/assets/img/examples/slide-03.jpg"><span class="s3">../assets/img/examples/slide-03.jpg</span></a>" alt=""&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="carousel-caption"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;h1&gt;One more for good measure.&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;p class="lead"&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;a class="btn btn-large btn-primary" href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23"><span class="s1">#</span></a>"&gt;Browse gallery&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a class="left carousel-control" href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23myCarousel"><span class="s1">#myCarousel</span></a>" data-slide="prev"&gt;&amp;lsaquo;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a class="right carousel-control" href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23myCarousel"><span class="s1">#myCarousel</span></a>" data-slide="next"&gt;&amp;rsaquo;&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;&lt;!-- /.carousel --&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Marketing messaging and featurettes</p>
+<p class="p1"><span class="Apple-converted-space">    </span>================================================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Wrap the rest of the page in another container to center all the content. --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container marketing"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Three columns of text below the carousel --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="span4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;img class="img-circle" data-src="holder.js/140x140"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;Heading&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;a class="btn" href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23"><span class="s1">#</span></a>"&gt;View details &amp;raquo;&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;&lt;!-- /.span4 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="span4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;img class="img-circle" data-src="holder.js/140x140"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;Heading&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;a class="btn" href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23"><span class="s1">#</span></a>"&gt;View details &amp;raquo;&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;&lt;!-- /.span4 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="span4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;img class="img-circle" data-src="holder.js/140x140"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2&gt;Heading&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;a class="btn" href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23"><span class="s1">#</span></a>"&gt;View details &amp;raquo;&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;&lt;!-- /.span4 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;&lt;!-- /.row --&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- START THE FEATURETTES --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;hr class="featurette-divider"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="featurette"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;img class="featurette-image pull-right" src="<a href="view-source:http://twitter.github.io/bootstrap/assets/img/examples/browser-icon-chrome.png"><span class="s1">../assets/img/examples/browser-icon-chrome.png</span></a>"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="featurette-heading"&gt;First featurette headling. &lt;span class="muted"&gt;It'll blow your mind.&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="lead"&gt;Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;hr class="featurette-divider"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="featurette"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;img class="featurette-image pull-left" src="<a href="view-source:http://twitter.github.io/bootstrap/assets/img/examples/browser-icon-firefox.png"><span class="s1">../assets/img/examples/browser-icon-firefox.png</span></a>"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="featurette-heading"&gt;Oh yeah, it's that good. &lt;span class="muted"&gt;See for yourself.&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="lead"&gt;Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;hr class="featurette-divider"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="featurette"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;img class="featurette-image pull-right" src="<a href="view-source:http://twitter.github.io/bootstrap/assets/img/examples/browser-icon-safari.png"><span class="s1">../assets/img/examples/browser-icon-safari.png</span></a>"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="featurette-heading"&gt;And lastly, this one. &lt;span class="muted"&gt;Checkmate.&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="lead"&gt;Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;hr class="featurette-divider"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- /END THE FEATURETTES --&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- FOOTER --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="pull-right"&gt;&lt;a href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23"><span class="s1">#</span></a>"&gt;Back to top&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&amp;copy; 2013 Company, Inc. &amp;middot; &lt;a href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23"><span class="s1">#</span></a>"&gt;Privacy&lt;/a&gt; &amp;middot; &lt;a href="<a href="view-source:http://twitter.github.io/bootstrap/examples/carousel.html%23"><span class="s1">#</span></a>"&gt;Terms&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;&lt;!-- /.container --&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Le javascript</p>
+<p class="p1"><span class="Apple-converted-space">    </span>================================================== --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Placed at the end of the document so the pages load faster --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="<a href="view-source:http://twitter.github.io/bootstrap/assets/js/jquery.js"><span class="s1">../assets/js/jquery.js</span></a>"&gt;&lt;/script&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;script src="<a href="view-source:http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"><span class="s3">../assets/js/bootstrap-transition.js</span></a>"&gt;&lt;/script&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;script src="<a href="view-source:http://twitter.github.io/bootstrap/assets/js/bootstrap-alert.js"><span class="s3">../assets/js/bootstrap-alert.js</span></a>"&gt;&lt;/script&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;script src="<a href="view-source:http://twitter.github.io/bootstrap/assets/js/bootstrap-modal.js"><span class="s3">../assets/js/bootstrap-modal.js</span></a>"&gt;&lt;/script&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;script src="<a href="view-source:http://twitter.github.io/bootstrap/assets/js/bootstrap-dropdown.js"><span class="s3">../assets/js/bootstrap-dropdown.js</span></a>"&gt;&lt;/script&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;script src="<a href="view-source:http://twitter.github.io/bootstrap/assets/js/bootstrap-scrollspy.js"><span class="s3">../assets/js/bootstrap-scrollspy.js</span></a>"&gt;&lt;/script&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;script src="<a href="view-source:http://twitter.github.io/bootstrap/assets/js/bootstrap-tab.js"><span class="s3">../assets/js/bootstrap-tab.js</span></a>"&gt;&lt;/script&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;script src="<a href="view-source:http://twitter.github.io/bootstrap/assets/js/bootstrap-tooltip.js"><span class="s3">../assets/js/bootstrap-tooltip.js</span></a>"&gt;&lt;/script&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;script src="<a href="view-source:http://twitter.github.io/bootstrap/assets/js/bootstrap-popover.js"><span class="s3">../assets/js/bootstrap-popover.js</span></a>"&gt;&lt;/script&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;script src="<a href="view-source:http://twitter.github.io/bootstrap/assets/js/bootstrap-button.js"><span class="s3">../assets/js/bootstrap-button.js</span></a>"&gt;&lt;/script&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;script src="<a href="view-source:http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"><span class="s3">../assets/js/bootstrap-collapse.js</span></a>"&gt;&lt;/script&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;script src="<a href="view-source:http://twitter.github.io/bootstrap/assets/js/bootstrap-carousel.js"><span class="s3">../assets/js/bootstrap-carousel.js</span></a>"&gt;&lt;/script&gt;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;script src="<a href="view-source:http://twitter.github.io/bootstrap/assets/js/bootstrap-typeahead.js"><span class="s3">../assets/js/bootstrap-typeahead.js</span></a>"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>!function ($) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>$(function(){</p>
+<p class="p1"><span class="Apple-converted-space">          </span>// carousel demo</p>
+<p class="p1"><span class="Apple-converted-space">          </span>$('#myCarousel').carousel()</p>
+<p class="p1"><span class="Apple-converted-space">        </span>})</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}(window.jQuery)</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>&lt;script src="<a href="view-source:http://twitter.github.io/bootstrap/assets/js/holder/holder.js"><span class="s3">../assets/js/holder/holder.js</span></a>"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>

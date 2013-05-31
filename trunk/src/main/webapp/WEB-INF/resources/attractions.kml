@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+    <Document>
+        <Style id="NoneIconStyle">
+            <IconStyle>
+                <Icon>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Placemark id="placemark1">
+            <name>M&amp;T Bank Stadium</name>
+            <description>1101 Russell St Baltimore, MD 21230</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.62419,39.27837,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark3">
+            <name>Camden Yards</name>
+            <description>333 W Camden St, Baltimore, MD</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.620144,39.285249,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark4">
+            <name>Baltimore Aquarium</name>
+            <description> 501 E Pratt St, Baltimore, MD </description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.60844,39.28669,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark5">
+            <name>Maryland Science Center</name>
+            <description>601 Light St, Baltimore, MD</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.61281,39.28182,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark7">
+            <name>Port Discovery</name>
+            <description>35 Market Pl, Baltimore, MD</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.606732,39.288208,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark9">
+            <name>Harborplace &amp; the Gallery</name>
+            <description>201 E Pratt St, Baltimore, MD</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.61101,39.28662,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark11">
+            <name>Baltimore Zoo</name>
+            <description>1876 Manision house Dr, Baltimore, MD</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.647019,39.323235,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark13">
+            <name>Babe Ruth Museum</name>
+            <description>216 Emory St, Baltimore, MD</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.62467,39.28558,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark15">
+            <name>USS Constellation</name>
+            <description>301 E Pratt St, Baltimore, MD</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.610712,39.28663,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark17">
+            <name>Baltimore Museum of Art</name>
+            <description>10 Art Museum Dr, Baltimore, MD</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.61823,39.32593,0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

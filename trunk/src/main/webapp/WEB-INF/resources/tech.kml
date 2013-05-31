@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+    <Document>
+        <Style id="NoneIconStyle">
+            <IconStyle>
+                <Icon>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Placemark id="placemark1">
+            <name>Aol</name>
+            <description>1020 Hull St., Baltimore, MD 21230</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.59124,39.274752,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark3">
+            <name>DoublePositive</name>
+            <description>1501 S. Clinton St., Baltimore, MD 21224</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.568763,39.275222,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark4">
+            <name>Tribal Fusion</name>
+            <description>921 E. Fort Ave. #300, Baltimore, MD 21230</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.600994,39.270652,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark5">
+            <name>Milennial Media</name>
+            <description>2400 Boston St. #201, Baltimore, MD 21224</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.57992,39.280558,0</coordinates>
+            </Point>
+        </Placemark>
+        <!--<Placemark id="placemark7">
+            <name>The Search Agency</name>
+            <description>1050 Hull St. #110, Baltimore, MD 21230</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.591761,39.274711,0</coordinates>
+            </Point>
+        </Placemark>-->
+        <Placemark id="placemark9">
+            <name>GrooveCommerce</name>
+            <description>2400 Boston St. #320, Baltimore, MD 21224</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.57992,39.280558,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark11">
+            <name>R2integrated</name>
+            <description>400 E. Pratt St., Baltimore, MD 21202</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.609405,39.287048,0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+    <Document>
+        <Style id="NoneIconStyle">
+            <IconStyle>
+                <Icon>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Placemark id="placemark1">
+            <name>Ouzo Bay</name>
+            <description>1000 Lancaster St., Baltimore, MD 21202</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.599776,39.282434,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark3">
+            <name>Roy&apos;s</name>
+            <description>720 Aliceanna St., Baltimore, MD 21202</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.602232,39.283427,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark4">
+            <name>Chazz Original</name>
+            <description>1415 Aliceanna St., Baltimore MD, 21231</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.597639,39.283336,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark5">
+            <name>Oceanaire</name>
+            <description>801 Aliceanna St., Baltimore MD, 21231</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.600766,39.282895,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark7">
+            <name>Port Discovery</name>
+            <description>35 Market Pl, Baltimore, MD</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.606732,39.288208,0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="placemark9">
+            <name>Ruth&apos;s Chris Steakhouse</name>
+            <description>600 Water St., Baltimore, MD 21202</description>
+            <styleUrl>#NoneIconStyle</styleUrl>
+            <Point>
+                <coordinates>-76.607954,39.288676,0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
